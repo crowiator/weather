@@ -11,6 +11,10 @@
 		13EA44E729C8B0EE0079720C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EA44E629C8B0EE0079720C /* ContentView.swift */; };
 		13EA44E929C8B0EF0079720C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13EA44E829C8B0EF0079720C /* Assets.xcassets */; };
 		13EA44EC29C8B0EF0079720C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13EA44EB29C8B0EF0079720C /* Preview Assets.xcassets */; };
+		13EA44F329C8B2700079720C /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EA44F229C8B2700079720C /* Locations.swift */; };
+		13EA44F529C8B6CC0079720C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EA44F429C8B6CC0079720C /* DetailView.swift */; };
+		13EA44F729C8BE860079720C /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EA44F629C8BE860079720C /* APIKey.swift */; };
+		13EA44F929C8C1650079720C /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EA44F829C8C1650079720C /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		13EA44E629C8B0EE0079720C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		13EA44E829C8B0EF0079720C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13EA44EB29C8B0EF0079720C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		13EA44F229C8B2700079720C /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		13EA44F429C8B6CC0079720C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		13EA44F629C8BE860079720C /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		13EA44F829C8C1650079720C /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +40,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		132EB2E629C8FDB100BC67B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				13EA44F829C8C1650079720C /* Weather.swift */,
+				13EA44F629C8BE860079720C /* APIKey.swift */,
+				13EA44F229C8B2700079720C /* Locations.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		132EB2E729C8FDC900BC67B3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		132EB2E829C8FDD400BC67B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13EA44E629C8B0EE0079720C /* ContentView.swift */,
+				13EA44F429C8B6CC0079720C /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		13EA44D829C8B0EE0079720C = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +85,10 @@
 		13EA44E329C8B0EE0079720C /* weather */ = {
 			isa = PBXGroup;
 			children = (
+				132EB2E729C8FDC900BC67B3 /* ViewModel */,
+				132EB2E829C8FDD400BC67B3 /* View */,
+				132EB2E629C8FDB100BC67B3 /* Model */,
 				13EA44E429C8B0EE0079720C /* weatherApp.swift */,
-				13EA44E629C8B0EE0079720C /* ContentView.swift */,
 				13EA44E829C8B0EF0079720C /* Assets.xcassets */,
 				13EA44EA29C8B0EF0079720C /* Preview Content */,
 			);
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13EA44F329C8B2700079720C /* Locations.swift in Sources */,
+				13EA44F529C8B6CC0079720C /* DetailView.swift in Sources */,
 				13EA44E729C8B0EE0079720C /* ContentView.swift in Sources */,
 				13EA44E529C8B0EE0079720C /* weatherApp.swift in Sources */,
+				13EA44F929C8C1650079720C /* Weather.swift in Sources */,
+				13EA44F729C8BE860079720C /* APIKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
